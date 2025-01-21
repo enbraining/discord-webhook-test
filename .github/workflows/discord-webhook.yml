@@ -14,10 +14,10 @@ jobs:
         uses: actions/checkout@v3
         
       - name: Discord Webhook  
-        uses: enbraining/discord-webhook-action@v0.0.3-alpha
+        uses: enbraining/discord-webhook-action@v0.0.4-alpha
         with:
           webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
           username: "test"
-          # content: "# Hello World"
           type: EMBEDS
-          title: HELLO
+          title: "hello"
+          description: "world"
