@@ -18,5 +18,6 @@ jobs:
         with:
           webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
           username: "test"
-          content: "# Hello World"
-          type: CONTENT
+          # content: "# Hello World"
+          type: EMBED
+          title: HELLO
